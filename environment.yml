@@ -1,0 +1,43 @@
+name: seaice-cdr
+channels:
+ - conda-forge
+ - default
+dependencies:
+ - python ~=3.12
+
+ ###################################################
+ # Imported dependencies and extensions            #
+ ###################################################
+
+ # Jupyterlab for notebooks
+ - jupyterlab
+
+ # Data Access
+ - earthaccess
+ - odc-stac
+ - pystac-client
+ 
+ # Plotting
+ - matplotlib
+ - cartopy
+ - hvplot
+ - ipympl
+ - cmocean
+
+ # xarray
+ - xarray
+ - netCDF4
+ - h5netcdf
+ - h5py
+ - dask
+ - bottleneck
+ - rioxarray
+
+ # geopandas
+ - geopandas
+
+ - pip
+ - pip:
+   - -e /home/apbarret/src/nsidc_datasets
+ 
+
